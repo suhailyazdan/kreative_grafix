@@ -36,7 +36,7 @@ export default function About() {
         <div className="grid gap-4 rounded-[1.75rem] border border-black/10 bg-white/60 p-6 shadow-[0_18px_40px_rgba(17,17,17,0.05)] backdrop-blur-sm md:p-8">
           <div className="overflow-hidden rounded-[1.4rem] border border-black/5 bg-[#f4efe9]">
             <img
-              src="/banner-suhail-yazdan.png"
+              src="/banner_suhail_yazdan.png"
               alt="Professional lifestyle portrait with confident pose"
               className="h-64 w-full object-cover object-center md:h-80"
             />

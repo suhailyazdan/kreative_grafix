@@ -1,6 +1,16 @@
+
 import { Resend } from "resend";
 
-const recipient = "yazdan.suhail@gmail.com";
+const recipient = process.env.CONTACT_EMAIL || "suhailyazdanweb@gmail.com";
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
 
 export async function POST(request) {
   if (!process.env.RESEND_API_KEY) {
@@ -17,11 +27,22 @@ export async function POST(request) {
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
+  const html = `
+    <h2>New freelance enquiry</h2>
+    <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+    <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+    <p><strong>Service:</strong> ${escapeHtml(service)}</p>
+    <p><strong>Budget:</strong> ${escapeHtml(budget)}</p>
+    <p><strong>Message:</strong></p>
+    <p>${escapeHtml(message).replaceAll("\n", "<br />")}</p>
+  `;
+
   const { error } = await resend.emails.send({
-    from: "Portfolio enquiries <onboarding@resend.dev>",
-    to: [recipient],
+    from: "onboarding@resend.dev",
+    to: recipient,
     replyTo: email,
     subject: `Freelance enquiry from ${name}`,
+    html,
     text: [
       `Name: ${name}`,
       `Email: ${email}`,
@@ -33,6 +54,7 @@ export async function POST(request) {
   });
 
   if (error) {
+    console.error("Resend email failed:", error);
     return Response.json({ error: "Email delivery failed. Please try WhatsApp instead." }, { status: 502 });
   }
 
