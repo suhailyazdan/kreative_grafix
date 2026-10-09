@@ -1,12 +1,25 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const resumeDownloadUrl = "/resume.pdf";
 
 export default function ResumePage() {
   return (
     <main className="min-h-screen bg-[#f5f3ee] px-4 py-12 text-zinc-900">
       <div className="mx-auto max-w-4xl rounded-[2rem] border border-black/10 bg-white/60 p-6 shadow-[0_18px_40px_rgba(17,17,17,0.08)] md:p-10">
+        <Link href="/" className="mb-8 inline-flex items-center gap-2.5 text-sm font-bold text-zinc-900">
+          <Image
+            src="/logo%20kreative%20grafix.svg"
+            alt=""
+            width={38}
+            height={40}
+            className="h-10 w-10 object-contain"
+          />
+          Kreative Grafix
+        </Link>
         <div className="flex flex-col gap-4 border-b border-black/10 pb-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-[0.72rem] font-bold uppercase tracking-[0.14em] text-zinc-500">Resume</p>
+            <p className="text-[0.72rem] font-bold uppercase tracking-[0.14em] text-teal-700">Profile &amp; Resume</p>
             <h1 className="mt-2 text-4xl tracking-[-0.06em] md:text-5xl">Suhail Yazdan</h1>
             <p className="mt-2 text-lg text-zinc-600">
               UI/UX Designer • Web Designer • Front-End Developer
@@ -16,7 +29,7 @@ export default function ResumePage() {
           <a
             href={resumeDownloadUrl}
             download
-            className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-5 py-3 font-semibold text-white transition hover:bg-black"
+            className="inline-flex items-center justify-center rounded-full bg-[#10bfaa] px-5 py-3 font-semibold text-zinc-950 transition hover:bg-[#0eaa98]"
           >
             Download PDF
           </a>
@@ -47,10 +60,10 @@ export default function ResumePage() {
           <aside className="rounded-[1.25rem] border border-black/10 bg-[#efeae0] p-5">
             <h2 className="text-xl tracking-[-0.05em] text-zinc-900">Contact</h2>
             <ul className="mt-4 space-y-3 text-sm text-zinc-700">
-              <li>Email: hello@example.com</li>
-              <li>LinkedIn: linkedin.com</li>
-              <li>GitHub: github.com</li>
-              <li>Behance: behance.net</li>
+              <li>
+                Email: <a className="font-semibold text-zinc-900 underline decoration-teal-500 underline-offset-4" href="mailto:yazdan.suhail@gmail.com">yazdan.suhail@gmail.com</a>
+              </li>
+              <li>Portfolio: Kreative Grafix</li>
             </ul>
           </aside>
         </div>
@@ -76,9 +89,9 @@ export default function ResumePage() {
         </div>
 
         <div className="mt-10 flex flex-col gap-4 border-t border-black/10 pt-6 md:flex-row md:items-center md:justify-between">
-          <a href="/" className="font-semibold text-zinc-900 underline decoration-black/20 underline-offset-4">
-            Back to portfolio
-          </a>
+          <Link href="/" className="font-semibold text-zinc-900 underline decoration-black/20 underline-offset-4">
+            Back to Kreative Grafix
+          </Link>
           <a
             href={resumeDownloadUrl}
             download

@@ -46,7 +46,7 @@ export default function WhatIBring() {
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {strengths.map(({ title, description, icon: Icon }) => (
             <article key={title} className="rounded-[1.5rem] border border-black/10 bg-white/60 p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(99,102,241,0.08)]">
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-200 via-violet-200 to-pink-200 text-zinc-900">
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-200 to-orange-100 text-zinc-900">
                 <Icon size={18} />
               </div>
               <h3 className="mb-3 text-xl tracking-[-0.04em] text-zinc-900">{title}</h3>

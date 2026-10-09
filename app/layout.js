@@ -12,25 +12,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("http://localhost:3000"),
   title: {
-    default: "Your Name | Portfolio",
-    template: "%s | Your Name",
+    default: "Kreative Grafix | Suhail Yazdan Portfolio",
+    template: "%s | Kreative Grafix",
   },
   description:
-    "Portfolio website showcasing projects, experience, skills, and professional background.",
+    "Explore the design portfolio, projects, experience, and creative work of Suhail Yazdan at Kreative Grafix.",
   openGraph: {
-    title: "Your Name | Portfolio",
+    title: "Kreative Grafix | Suhail Yazdan Portfolio",
     description:
-      "Portfolio website showcasing projects, experience, skills, and professional background.",
+      "Design, digital experiences, and front-end development by Suhail Yazdan.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name | Portfolio",
+    title: "Kreative Grafix | Suhail Yazdan Portfolio",
     description:
-      "Portfolio website showcasing projects, experience, skills, and professional background.",
+      "Design, digital experiences, and front-end development by Suhail Yazdan.",
   },
 };
 

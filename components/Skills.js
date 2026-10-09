@@ -34,7 +34,7 @@ export default function Skills({ items = [] }) {
                 key={group.category}
                 className="group min-h-full rounded-[1.5rem] border border-black/10 bg-white/60 p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(99,102,241,0.08)]"
               >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-200 via-pink-200 to-violet-200 text-zinc-900 shadow-inner">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-200 to-orange-100 text-zinc-900 shadow-inner">
                   <Icon size={18} />
                 </div>
                 <h3 className="mb-3 text-lg font-semibold tracking-[-0.04em] text-zinc-900">{group.category}</h3>

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FiDownload, FiMenu, FiX } from "react-icons/fi";
 
@@ -20,16 +22,26 @@ export default function Navbar() {
         aria-label="Main navigation"
         className="mx-auto flex min-h-[72px] max-w-[1180px] items-center justify-between gap-4 px-4"
       >
-        <a
+        <Link
           href="/"
-          className="flex items-center gap-3 text-base font-bold tracking-[-0.04em] text-zinc-900"
-          aria-label="Go to homepage"
+          className="flex items-center gap-2.5 text-base font-bold tracking-[-0.04em] text-zinc-900"
+          aria-label="Kreative Grafix home"
         >
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-orange-300 via-pink-300 to-violet-400 text-sm text-zinc-900 shadow-lg shadow-orange-200/60">
-            SY
+          <Image
+            src="/logo%20kreative%20grafix.svg"
+            alt=""
+            width={42}
+            height={44}
+            priority
+            className="h-10 w-10 object-contain"
+          />
+          <span className="leading-tight">
+            Kreative Grafix
+            <span className="mt-0.5 block text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-zinc-500">
+              Design · Digital · Development
+            </span>
           </span>
-          Suhail Yazdan
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -63,7 +75,7 @@ export default function Navbar() {
           </ul>
           <a
             href="/resume"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-black/10 bg-gradient-to-r from-zinc-900 to-zinc-700 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-zinc-200 transition hover:scale-[1.02]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-[#10bfaa] px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-lg shadow-teal-900/10 transition hover:-translate-y-0.5 hover:bg-[#0eaa98]"
           >
             <FiDownload size={14} />
             Resume

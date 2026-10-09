@@ -1,4 +1,5 @@
 import { FiGithub, FiGlobe, FiLinkedin } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Footer() {
   const links = [
@@ -11,8 +12,19 @@ export default function Footer() {
     <footer className="border-t border-black/10 pb-8 pt-8">
       <div className="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="m-0 text-base font-bold tracking-[-0.04em] text-zinc-900">Suhail Yazdan</p>
-          <p className="mt-1 text-sm text-zinc-500">UI/UX Designer • Web Designer • Front-End Developer</p>
+          <div className="flex items-center gap-2.5">
+            <Image
+              src="/logo%20kreative%20grafix.svg"
+              alt=""
+              width={36}
+              height={38}
+              className="h-9 w-9 object-contain"
+            />
+            <div>
+              <p className="m-0 text-base font-bold tracking-[-0.04em] text-zinc-900">Kreative Grafix</p>
+              <p className="mt-1 text-sm text-zinc-500">Suhail Yazdan · Designer &amp; Developer</p>
+            </div>
+          </div>
         </div>
 
         <nav aria-label="Footer navigation" className="flex flex-wrap items-center gap-3 text-sm font-medium text-zinc-600">

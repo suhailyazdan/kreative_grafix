@@ -14,7 +14,7 @@ export default function Experience({ items = [] }) {
         <div className="relative mt-8 grid gap-6 before:absolute before:bottom-0 before:left-[0.67rem] before:top-0 before:w-px before:bg-black/10">
           {items.map((job) => (
             <article key={`${job.company}-${job.role}`} className="relative grid grid-cols-[1.5rem_minmax(0,1fr)] gap-4 align-start">
-              <div className="relative z-10 mt-1.5 flex h-5 w-5 items-center justify-center rounded-full border-[3px] border-[#f5f3ee] bg-gradient-to-br from-orange-300 via-violet-300 to-pink-300" aria-hidden="true">
+              <div className="relative z-10 mt-1.5 flex h-5 w-5 items-center justify-center rounded-full border-[3px] border-[#f5f3ee] bg-[#10bfaa]" aria-hidden="true">
                 <FiBriefcase size={9} className="text-zinc-900" />
               </div>
 
@@ -24,7 +24,7 @@ export default function Experience({ items = [] }) {
                     <p className="mb-1 text-[0.74rem] font-bold uppercase tracking-[0.1em] text-zinc-500">{job.company}</p>
                     <h3 className="m-0 text-2xl tracking-[-0.05em] text-zinc-900">{job.role}</h3>
                   </div>
-                  <span className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-sm font-semibold text-orange-700">
+                  <span className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-sm font-semibold text-teal-800">
                     <FiTrendingUp size={12} />
                     {job.period}
                   </span>
