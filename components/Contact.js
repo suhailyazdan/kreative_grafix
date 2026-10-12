@@ -17,9 +17,9 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const links = [
     { label: "yazdan.suhail@gmail.com", href: "mailto:yazdan.suhail@gmail.com", icon: FiMail },
-    { label: "LinkedIn", href: "https://www.linkedin.com", icon: FiLinkedin },
-    { label: "Behance", href: "https://www.behance.net", icon: FiGlobe },
-    { label: "Coroflot", href: "https://www.coroflot.com/", icon: FiGlobe },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/suhailyazdan-ui-ux-designer/", icon: FiLinkedin },
+    { label: "Behance", href: "https://www.behance.net/suhailyazdan", icon: FiGlobe },
+    { label: "Coroflot", href: "https://www.coroflot.com/suhail_graphics", icon: FiGlobe },
     { label: "View Resume", href: "/resume", icon: FiDownload },
   ];
 

@@ -3,9 +3,9 @@ import { FiArrowRight, FiGlobe, FiLinkedin } from "react-icons/fi";
 
 export default function Hero() {
   const socials = [
-    { label: "LinkedIn", href: "https://www.linkedin.com", icon: FiLinkedin },
-    { label: "Behance", href: "https://www.behance.net", icon: FiGlobe },
-    { label: "Coroflot", href: "https://www.coroflot.com/", icon: FiGlobe }
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/suhailyazdan-ui-ux-designer/", icon: FiLinkedin },
+    { label: "Behance", href: "https://www.behance.net/suhailyazdan", icon: FiGlobe },
+    { label: "Coroflot", href: "https://www.coroflot.com/suhail_graphics", icon: FiGlobe }
   ];
 
   const highlights = [
