@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="bg-grid absolute inset-0 opacity-30" />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-[-2rem] top-20 z-0 h-44 w-44 opacity-40 sm:right-[7%] sm:top-16 sm:h-56 sm:w-56 lg:right-[35%] lg:top-0 lg:h-72 lg:w-72"
+        className="pointer-events-none absolute right-[-2rem] top-20 z-0 h-44 w-44 scale-[0.8] opacity-40 sm:right-[7%] sm:top-16 sm:h-56 sm:w-56 sm:scale-[0.8] lg:right-[34%] lg:top-0 lg:h-72 lg:w-72 lg:scale-[0.8]"
       >
         <Image
           src="/logo%20kreative%20grafix.svg"
@@ -44,12 +44,14 @@ export default function Hero() {
           </h1>
 
           <p className="m-0 max-w-[42rem] text-lg leading-8 text-zinc-600 md:text-[1.42rem]">
-            I bring design, development, and digital storytelling together to
-            create thoughtful experiences for people and businesses.
+            I&apos;m a UI UX Designer & full-stack developer, and my favorite stack is MERN
+            (MongoDB, Express, React, and Node.js). I bring design,
+            development, and digital storytelling together to create thoughtful
+            experiences for people and businesses.
           </p>
 
           <ul className="m-0 flex list-none flex-wrap gap-2 p-0" aria-label="Professional roles">
-            {["UI/UX Designer", "Web Developer", "Mentor / Trainer"].map((role) => (
+            {["Full-Stack Developer", "MERN Stack Specialist", "Mentor / Trainer"].map((role) => (
               <li
                 key={role}
                 className="rounded-full border border-teal-900/10 bg-teal-50/80 px-3.5 py-2 text-sm font-semibold text-teal-950"

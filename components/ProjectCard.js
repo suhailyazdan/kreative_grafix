@@ -1,15 +1,17 @@
+import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 
 export default function ProjectCard({ project }) {
   return (
     <article className="group flex min-h-full flex-col overflow-hidden rounded-[1.4rem] border border-black/10 bg-white/60 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(17,17,17,0.08)]">
-      <div className="relative aspect-[4/3] overflow-hidden bg-[#f2efe9]">
-        <img
-          src={project.image || "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"}
+      <div className="relative aspect-[4/3] overflow-hidden bg-white">
+        <Image
+          src={project.image}
           alt={project.imageAlt || `${project.title} project preview`}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          fill
+          sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+          className="object-contain transition duration-500 group-hover:scale-[1.02]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />
       </div>
 
       <div className="flex flex-1 flex-col gap-4 p-5">
