@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { FiArrowRight, FiGithub, FiGlobe, FiLinkedin } from "react-icons/fi";
+import { FiArrowRight, FiGlobe, FiLinkedin } from "react-icons/fi";
 
 export default function Hero() {
   const socials = [
     { label: "LinkedIn", href: "https://www.linkedin.com", icon: FiLinkedin },
-    { label: "GitHub", href: "https://github.com", icon: FiGithub },
     { label: "Behance", href: "https://www.behance.net", icon: FiGlobe },
+    { label: "Coroflot", href: "https://www.coroflot.com/", icon: FiGlobe }
   ];
 
   const highlights = [

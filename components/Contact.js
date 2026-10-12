@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   FiArrowUpRight,
   FiDownload,
-  FiGithub,
   FiGlobe,
   FiLinkedin,
   FiMail,
@@ -19,8 +18,8 @@ export default function Contact() {
   const links = [
     { label: "yazdan.suhail@gmail.com", href: "mailto:yazdan.suhail@gmail.com", icon: FiMail },
     { label: "LinkedIn", href: "https://www.linkedin.com", icon: FiLinkedin },
-    { label: "GitHub", href: "https://github.com", icon: FiGithub },
     { label: "Behance", href: "https://www.behance.net", icon: FiGlobe },
+    { label: "Coroflot", href: "https://www.coroflot.com/", icon: FiGlobe },
     { label: "View Resume", href: "/resume", icon: FiDownload },
   ];
 
