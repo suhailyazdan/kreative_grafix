@@ -32,17 +32,17 @@ export const projects = [
     image: "/project_thumbnails/Mind_Matrix.jpg",
     imageAlt: "Mind Matrix education and industry talent platform website",
   },
-  {
-    slug: "oscc",
-    title: "OSCC Website Design",
-    category: "Community / Open Source",
-    role: "UI/UX Designer • Web Designer",
-    tools: "Figma, Responsive Web Design",
-    summary:
-      "A community-focused website for the Open Source Community Center, making its programs, learning resources, events, and ways to get involved easy to explore.",
-    image: "/project_thumbnails/OSCC.jpg",
-    imageAlt: "OSCC community website design with programs and resource pages",
-  },
+  // {
+  //   slug: "oscc",
+  //   title: "OSCC Website Design",
+  //   category: "Community / Open Source",
+  //   role: "UI/UX Designer • Web Designer",
+  //   tools: "Figma, Responsive Web Design",
+  //   summary:
+  //     "A community-focused website for the Open Source Community Center, making its programs, learning resources, events, and ways to get involved easy to explore.",
+  //   image: "/project_thumbnails/OSCC.jpg",
+  //   imageAlt: "OSCC community website design with programs and resource pages",
+  // },
   {
     slug: "e-walkins-dashboard",
     title: "E-walkins / Dashboard",

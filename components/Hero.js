@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="bg-grid absolute inset-0 opacity-30" />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-[-2rem] top-20 z-0 h-44 w-44 scale-[0.8] opacity-40 sm:right-[7%] sm:top-16 sm:h-56 sm:w-56 sm:scale-[0.8] lg:right-[34%] lg:top-0 lg:h-72 lg:w-72 lg:scale-[0.8]"
+        className="pointer-events-none absolute right-[-2rem] top-20 z-0 h-44 w-44 scale-[0.8] opacity-20 sm:right-[7%] sm:top-16 sm:h-56 sm:w-56 sm:scale-[0.8] lg:right-[34%] lg:top-0 lg:h-72 lg:w-72 lg:scale-[0.5]"
       >
         <Image
           src="/logo%20kreative%20grafix.svg"
