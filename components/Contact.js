@@ -205,7 +205,7 @@ export default function Contact() {
                 <p role="status" className="m-0 inline-flex items-center gap-2 text-sm font-semibold text-orange-200 md:col-span-2">
                   {submittedMethod === "whatsapp"
                     ? "Your enquiry is ready in WhatsApp. Send it there to get in touch."
-                    : "Your enquiry has been sent. I&apos;ll be in touch soon."}
+                    : "Your enquiry has been sent. I’ll be in touch soon."}
                   <FiArrowUpRight size={15} />
                 </p>
               )}
