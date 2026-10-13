@@ -20,6 +20,19 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Freelance enquiry email
+
+The contact form's Email option sends enquiries through the Resend API route. Copy
+`.env.example` to `.env.local`, then set `RESEND_API_KEY` to a valid Resend API
+key. Keep the key server-side; do not add it to source files or any `NEXT_PUBLIC_`
+variable. `CONTACT_EMAIL` sets the recipient, and `RESEND_FROM_EMAIL` sets the
+sender.
+
+For production, add the same variables to the hosting provider's environment
+settings. Verify your sending domain in Resend and use an address on that domain
+for `RESEND_FROM_EMAIL`. The default `onboarding@resend.dev` sender is intended
+for Resend testing and may only deliver to the account's verified recipient.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

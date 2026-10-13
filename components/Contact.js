@@ -13,6 +13,7 @@ import {
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submittedMethod, setSubmittedMethod] = useState("");
   const [submissionError, setSubmissionError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const links = [
@@ -26,6 +27,7 @@ export default function Contact() {
   async function handleSubmit(event) {
     event.preventDefault();
     setSubmitted(false);
+    setSubmittedMethod("");
     setSubmissionError("");
     setIsSubmitting(true);
     const formData = new FormData(event.currentTarget);
@@ -46,7 +48,14 @@ export default function Contact() {
 
     try {
       if (sendMethod === "whatsapp") {
-        window.open(`https://web.whatsapp.com/send?phone=917411555859&text=${encodeURIComponent(inquiry)}`, "_blank", "noopener,noreferrer");
+        const whatsappWindow = window.open(
+          `https://wa.me/917411555859?text=${encodeURIComponent(inquiry)}`,
+          "_blank",
+          "noopener,noreferrer",
+        );
+        if (!whatsappWindow) {
+          throw new Error("WhatsApp could not be opened. Please allow pop-ups or choose Email.");
+        }
       } else {
         const response = await fetch("/api/contact", {
           method: "POST",
@@ -60,9 +69,12 @@ export default function Contact() {
         }
       }
 
+      setSubmittedMethod(sendMethod);
       setSubmitted(true);
     } catch (error) {
-      setSubmissionError(error.message);
+      setSubmissionError(
+        error instanceof Error ? error.message : "Your enquiry could not be sent.",
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -191,7 +203,9 @@ export default function Contact() {
               </div>
               {submitted && (
                 <p role="status" className="m-0 inline-flex items-center gap-2 text-sm font-semibold text-orange-200 md:col-span-2">
-                  Your message is ready in both apps. I&apos;ll be in touch soon.
+                  {submittedMethod === "whatsapp"
+                    ? "Your enquiry is ready in WhatsApp. Send it there to get in touch."
+                    : "Your enquiry has been sent. I&apos;ll be in touch soon."}
                   <FiArrowUpRight size={15} />
                 </p>
               )}

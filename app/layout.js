@@ -18,6 +18,10 @@ export const metadata = {
   },
   description:
     "Explore the design portfolio, projects, experience, and creative work of Suhail Yazdan at Kreative Grafix.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+  },
   openGraph: {
     title: "Kreative Grafix | Suhail Yazdan Portfolio",
     description:
