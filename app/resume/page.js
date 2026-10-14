@@ -18,9 +18,24 @@ import {
 } from "react-icons/fi";
 
 export const metadata = {
-  title: "Resume",
+  title: "UI/UX Designer Resume",
+  alternates: { canonical: "/resume" },
+  openGraph: {
+    title: "Suhail Yazdan - Resume",
+    description:
+      "UI/UX design, front-end development, and training experience from Suhail Yazdan.",
+    url: "/resume",
+    images: ["/opengraph-image"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Suhail Yazdan - Resume",
+    description:
+      "UI/UX design, front-end development, and training experience from Suhail Yazdan.",
+    images: ["/opengraph-image"],
+  },
   description:
-    "The experience, design practice, and education of Suhail Yazdan — UI/UX designer, developer, and mentor.",
+    "Suhail Yazdan’s resume: UI/UX design experience, front-end development skills, education, and training and mentoring work.",
 };
 
 const experience = [

@@ -33,6 +33,14 @@ settings. Verify your sending domain in Resend and use an address on that domain
 for `RESEND_FROM_EMAIL`. The default `onboarding@resend.dev` sender is intended
 for Resend testing and may only deliver to the account's verified recipient.
 
+## SEO and social previews
+
+The site generates canonical URLs, `robots.txt`, and `sitemap.xml` from
+`VERCEL_PROJECT_PRODUCTION_URL` on Vercel. For local development, set `SITE_URL`
+to the local or deployed base URL. The sitemap includes the homepage, resume,
+and published project pages. Add the production domain to Google Search Console
+and submit `/sitemap.xml` after deployment.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

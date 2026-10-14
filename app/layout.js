@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { personName, siteName, siteUrl } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,28 +13,53 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: siteUrl,
   title: {
-    default: "Kreative Grafix | Suhail Yazdan Portfolio",
-    template: "%s | Kreative Grafix",
+    default: `${personName} | UI/UX Designer Portfolio`,
+    template: `%s | ${siteName}`,
   },
   description:
-    "Explore the design portfolio, projects, experience, and creative work of Suhail Yazdan at Kreative Grafix.",
+    "Suhail Yazdan is a UI/UX Designer creating intuitive digital products, with front-end development expertise and a passion for training and mentoring.",
+  applicationName: siteName,
+  authors: [{ name: personName, url: siteUrl }],
+  creator: personName,
+  publisher: siteName,
+  keywords: [
+    "Suhail Yazdan",
+    "UI/UX Designer",
+    "UI Designer",
+    "User Experience Design",
+    "Front-End Development",
+    "React",
+    "Next.js",
+    "Training and Mentoring",
+    "Kreative Grafix",
+  ],
+  alternates: { canonical: "/" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
   },
   openGraph: {
-    title: "Kreative Grafix | Suhail Yazdan Portfolio",
+    title: `${personName} | UI/UX Designer Portfolio`,
     description:
-      "Design, digital experiences, and front-end development by Suhail Yazdan.",
+      "Explore UI/UX design, front-end development, and training work by Suhail Yazdan.",
     type: "website",
     locale: "en_US",
+    siteName,
+    url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kreative Grafix | Suhail Yazdan Portfolio",
+    title: `${personName} | UI/UX Designer Portfolio`,
     description:
-      "Design, digital experiences, and front-end development by Suhail Yazdan.",
+      "Explore UI/UX design, front-end development, and training work by Suhail Yazdan.",
+    images: ["/opengraph-image"],
   },
 };
 
