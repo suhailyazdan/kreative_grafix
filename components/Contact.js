@@ -9,6 +9,7 @@ import {
   FiMail,
   FiMessageCircle,
   FiSend,
+  FiArrowRight
 } from "react-icons/fi";
 
 export default function Contact() {
@@ -21,7 +22,7 @@ export default function Contact() {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/suhailyazdan-ui-ux-designer/", icon: FiLinkedin },
     { label: "Behance", href: "https://www.behance.net/suhailyazdan", icon: FiGlobe },
     { label: "Coroflot", href: "https://www.coroflot.com/suhail_graphics", icon: FiGlobe },
-    { label: "View Resume", href: "/resume", icon: FiDownload },
+    { label: "View Resume", href: "/resume", icon: FiArrowRight },
   ];
 
   async function handleSubmit(event) {

@@ -8,27 +8,27 @@ import {
 export default function WhatIBring() {
   const strengths = [
     {
-      title: "Design Thinking",
+      title: "UI/UX Design",
       description:
-        "I solve problems through user-centered thinking, clear structure, and thoughtful visual communication.",
+        "I shape intuitive digital experiences through user research, clear flows, thoughtful interaction, and polished interface design.",
       icon: FiPenTool,
     },
     {
-      title: "Design + Development",
+      title: "Front-End Development",
       description:
-        "I work across the full creative and technical process, helping ideas become polished digital experiences.",
+        "I use HTML, CSS, JavaScript, React, and Next.js to bring design intent into responsive, usable web experiences.",
       icon: FiLayers,
     },
     {
-      title: "Industry Experience",
+      title: "Training & Mentoring",
       description:
-        "My background spans graphic design, web design, front-end development, and digital marketing across many years of practice.",
+        "I guide learners through practical design and development work, helping them grow their skills, confidence, and portfolios.",
       icon: FiBookOpen,
     },
     {
-      title: "Teaching & Communication",
+      title: "Creative Experience",
       description:
-        "I explain complex ideas clearly, support learning, and bring strong communication into collaborative environments.",
+        "More than 20 years across design and digital work brings a broad visual perspective to each product challenge.",
       icon: FiMessageSquare,
     },
   ];

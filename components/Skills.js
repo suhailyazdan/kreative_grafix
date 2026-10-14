@@ -4,6 +4,7 @@ const skillImages = {
   "UI/UX Design": "/Skill-01-UI%20UX%20Design.png",
   "Design Tools": "/Skill-02-Design%20Tools.png",
   "Front-End Development": "/Skill-03-Front%20End%20Development.png",
+  "Training & Mentoring": "/Skill-04-Other%20Technologies.png",
   "Other Technologies": "/Skill-04-Other%20Technologies.png",
   "AI-Assisted Design & Development":
     "/Skill-05-AI-Assisted%20Design%20Development.png",
@@ -20,7 +21,7 @@ export default function Skills({ items = [] }) {
           </h2>
         </div>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {items.map((group) => {
             const image = skillImages[group.category];
 

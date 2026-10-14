@@ -10,8 +10,8 @@ export default function Hero() {
 
   const highlights = [
     "UI/UX Design",
-    "Web Design",
     "Front-End Development",
+    "Web Design",
     "Teaching & Mentoring",
   ];
 
@@ -44,14 +44,15 @@ export default function Hero() {
           </h1>
 
           <p className="m-0 max-w-[42rem] text-lg leading-8 text-zinc-600 md:text-[1.42rem]">
-            I&apos;m a UI UX Designer & full-stack developer, and my favorite stack is MERN
-            (MongoDB, Express, React, and Node.js). I bring design,
-            development, and digital storytelling together to create thoughtful
-            experiences for people and businesses.
+            I&apos;m a UI/UX Designer focused on creating clear, intuitive digital
+            experiences. I bring ideas from research and wireframes through to
+            polished interfaces, with front-end development skills in React and
+            Next.js to help bring those designs to life. I also enjoy training
+            and mentoring people in design and web development.
           </p>
 
           <ul className="m-0 flex list-none flex-wrap gap-2 p-0" aria-label="Professional roles">
-            {["Full-Stack Developer", "MERN Stack Specialist", "Mentor / Trainer"].map((role) => (
+            {["UI/UX Designer", "Front-End Developer", "Web Designer", "Trainer & Mentor"].map((role) => (
               <li
                 key={role}
                 className="rounded-full border border-teal-900/10 bg-teal-50/80 px-3.5 py-2 text-sm font-semibold text-teal-950"

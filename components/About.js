@@ -15,7 +15,7 @@ export default function About() {
           <div className="grid gap-2">
             <p className="text-[0.72rem] font-bold uppercase tracking-[0.14em] text-zinc-500">About</p>
             <h2 className="m-0 text-4xl leading-[1.05] tracking-[-0.06em] text-zinc-900 md:text-5xl">
-              Designing thoughtful digital experiences.
+              UI/UX design shaped around people.
             </h2>
           </div>
 
@@ -58,18 +58,21 @@ export default function About() {
           </div>
 
           <p className="m-0 text-base leading-8 text-zinc-600 md:text-lg">
-            I bring together graphic design, web design, UI/UX, front-end
-            development, and digital marketing to create work that is both
-            visually strong and user-focused.
+            I&apos;m a UI/UX Designer who turns user needs and business goals into
+            clear, intuitive digital experiences. My practice spans user
+            research, information architecture, wireframing, prototyping, and
+            polished interface design.
           </p>
           <p className="m-0 text-base leading-8 text-zinc-600 md:text-lg">
-            With more than 20 years of experience, I combine creative direction,
-            practical problem-solving, and modern front-end execution to deliver
-            clear digital experiences that work for people and businesses alike.
+            I also bring front-end development experience with HTML, CSS,
+            JavaScript, React, and Next.js. That technical perspective helps me
+            collaborate closely with developers and carry design decisions into
+            responsive, usable experiences.
           </p>
           <p className="m-0 text-base leading-8 text-zinc-600 md:text-lg">
-            I also enjoy teaching and mentoring, helping others build confidence
-            in digital skills, design thinking, and modern web technologies.
+            Training and mentoring are another important part of my work. I help
+            learners build confidence in UI/UX design, design thinking, and
+            front-end development through practical guidance.
           </p>
         </div>
       </div>

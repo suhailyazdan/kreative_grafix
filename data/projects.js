@@ -9,6 +9,8 @@ export const projects = [
       "A personalized gifting app that brings curated gift discovery and a simple shopping flow together, helping people find thoughtful presents for every occasion.",
     image: "/project_thumbnails/Gifterra.jpg",
     imageAlt: "Gifterra app case study with a personalized gift dashboard",
+    linkTitle: "View Case Study",
+    linkUrl: "https://www.behance.net/gallery/249352407/Personalized-Gift-Shopping-App-UXUI-Case-Study",
   },
   {
     slug: "fragrance-boutique",
@@ -20,6 +22,8 @@ export const projects = [
       "A refined fragrance storefront pairing floral art direction with signature scent discovery, detailed product storytelling, and an elegant shopping experience.",
     image: "/project_thumbnails/Fragrance_Boutique.jpg",
     imageAlt: "Fragrance Boutique website design and perfume product pages",
+    linkTitle: "View Figma Design",
+    linkUrl: "https://www.behance.net/gallery/219769549/Fragrance-Boutique-Website",
   },
   {
     slug: "mind-matrix",
@@ -31,6 +35,8 @@ export const projects = [
       "An education platform connecting learners with industry-ready skills and helping employers discover talent through learning programs, services, and a talent pool.",
     image: "/project_thumbnails/Mind_Matrix.jpg",
     imageAlt: "Mind Matrix education and industry talent platform website",
+    linkTitle: "View Figma Design",
+    linkUrl: "https://www.behance.net/gallery/223911241/MindMatrix-Website-Innovative-Dynamic-Talent-Driven",
   },
   // {
   //   slug: "oscc",
@@ -53,17 +59,34 @@ export const projects = [
       "A user-focused interview management dashboard that brings online walk-in interviews, candidate details, and scheduling actions into one clear workspace.",
     image: "/project_thumbnails/E-walkins.jpg",
     imageAlt: "E-walkins interview management dashboard shown on a laptop",
+    linkTitle: "Case Study",
+    linkUrl: "https://www.behance.net/gallery/241332689/Case-study-e-WalkIns-Simplifying-Online-Interviews",
   },
+  // {
+  //   slug: "scent-shak",
+  //   title: "Scent Shak",
+  //   category: "Fragrance / E-commerce",
+  //   role: "UI/UX Designer • Web Designer",
+  //   tools: "Figma, Responsive Web Design",
+  //   summary:
+  //     "A fragrance shopping experience presenting scent collections, product details, and calming aromatherapy benefits through a vivid, immersive visual direction.",
+  //   image: "/project_thumbnails/Scent_Shak.jpg",
+  //   imageAlt: "Scent Shak fragrance website with product gallery and scent details",
+  //   linkTitle: "View UI Design",
+  //   linkUrl: "https://www.behance.net/gallery/224427247/Smart-Scents-Elegant-Perfume-E-commerce-Website",
+  // },
   {
-    slug: "scent-shak",
-    title: "Scent Shak",
-    category: "Fragrance / E-commerce",
-    role: "UI/UX Designer • Web Designer",
-    tools: "Figma, Responsive Web Design",
+    slug: "smart-tech-guide",
+    title: "Smart Tech Guide",
+    category: "Technology / Web Design",
+    role: "Web Designer • UI/UX Designer",
+    tools: "Figma, Responsive Web Design, UI/UX Design",
     summary:
-      "A fragrance shopping experience presenting scent collections, product details, and calming aromatherapy benefits through a vivid, immersive visual direction.",
-    image: "/project_thumbnails/Scent_Shak.jpg",
-    imageAlt: "Scent Shak fragrance website with product gallery and scent details",
+      "A modern, minimalist website concept for Smart Tech Guide, combining technology, design, and creative insights through a clean editorial layout, a refined teal color palette, and responsive user-focused design.",
+    image: "/project_thumbnails/Smart-tech-guide.jpg",
+    imageAlt: "Smart Tech Guide modern website design featuring teal branding, clean typography, and technology-focused layouts",
+    linkTitle: "Developed Website",
+    linkUrl: "https://www.smartechguide.net",
   },
   {
     slug: "vertex-builders",
@@ -75,6 +98,8 @@ export const projects = [
       "A premium residential real estate concept showcasing Vertex Builders' architecture and setting a confident, editorial tone for its property brand.",
     image: "/project_thumbnails/Vertex-builders.jpg",
     imageAlt: "Vertex Builders residential real estate website concept",
+    linkTitle: "Developed Website",
+    linkUrl: "https://vertexbuilders-kappa.vercel.app/",
   },
 ];
 

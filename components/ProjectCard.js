@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
           alt={project.imageAlt || `${project.title} project preview`}
           fill
           sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-          className="object-contain transition duration-500 group-hover:scale-[1.02]"
+          className="object-cover transition duration-500 group-hover:scale-[1.02]"
         />
       </div>
 
@@ -37,11 +37,13 @@ export default function ProjectCard({ project }) {
 
         <div className="mt-auto pt-1">
           <a
-            href={`/projects/${project.slug}`}
+            href={project.linkUrl}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-2 border-b border-transparent font-semibold text-zinc-900 transition hover:border-zinc-900"
-            aria-label={`View case study for ${project.title}`}
+            aria-label={`${project.linkTitle} for ${project.title} (opens in a new tab)`}
           >
-            View Case Study
+            {project.linkTitle}
             <FiArrowRight size={14} />
           </a>
         </div>

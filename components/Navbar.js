@@ -77,8 +77,7 @@ export default function Navbar() {
             href="/resume"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[#10bfaa] px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-lg shadow-teal-900/10 transition hover:-translate-y-0.5 hover:bg-[#0eaa98]"
           >
-            <FiDownload size={14} />
-            Resume
+            View Resume
           </a>
         </div>
       </nav>

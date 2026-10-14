@@ -432,12 +432,11 @@ export default function ResumePage() {
               Design-minded. Tech-curious. People-first.
             </h2>
             <p className="mb-0 max-w-4xl leading-7 text-slate-600">
-              I’m a senior faculty member, mentor, and AI-enabled UI/UX and web
-              development professional. I bring design, development, and
-              teaching together—from research, wireframes, and design systems
-              to full-stack builds. I use emerging AI tools to explore ideas,
-              prototype, create, and solve problems while keeping the human
-              experience at the center.
+              I’m a UI/UX Designer focused on research, user flows, and
+              accessible, polished interfaces. My front-end development
+              experience helps me carry those ideas into responsive web
+              experiences, and my work as a senior faculty member lets me train
+              and mentor the next generation of designers and developers.
             </p>
           </div>
         </section>
