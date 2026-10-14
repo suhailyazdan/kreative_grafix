@@ -39,8 +39,8 @@ export default function Contact() {
     const message = formData.get("message");
     const sendMethod = formData.get("sendMethod");
     const inquiry = [
-      `Hi Suhail, I’m ${name}.`,
-      `I’m interested in: ${service}.`,
+      `Hi Suhail, I'm ${name}.`,
+      `I'm interested in: ${service}.`,
       `Budget: ${budget}.`,
       `Email: ${email}.`,
       "",
